@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Animal</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container" id="result-container">
+    <h1>Guess the Animal</h1>
+    <p id="description"></p>
+    <label for="animal">Choose the animal:</label>
+    <select id="animal">
+        <option value="select">Select an option</option>
+        <option value="lion">Lion</option>
+        <option value="elephant">Elephant</option>
+        <option value="giraffe">Giraffe</option>
+        <option value="tiger">Tiger</option>
+        <option value="zebra">Zebra</option>
+        <option value="monkey">Monkey</option>
+        <option value="bear">Bear</option>
+    </select>
+    <button onclick="checkAnswer()">Submit</button>
+    <p id="result"></p>
+    <img id="animalImage" style="display:none; margin: 0 auto" width="300px" alt="Animal Image">
+    <button id="tryAgainButton" onclick="tryAgain()" style="display:none;">Try Again</button>
+</div>
+<audio id="correctSound" ></audio>
+<script src="script.js"></script>
+</body>
+</html>
