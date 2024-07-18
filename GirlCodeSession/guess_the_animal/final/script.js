@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (selectedAnimal === currentAnimal.name) {
             result.textContent = `Correct! It's a ${currentAnimal.name}.`;
+            result.style.color = "green";
             animalImage.src = currentAnimal.imageLink;
             animalImage.style.display = "block";
             correctSound.src = currentAnimal.sound;
