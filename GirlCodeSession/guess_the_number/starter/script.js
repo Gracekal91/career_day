@@ -5,18 +5,7 @@ document.getElementById("guess-button").addEventListener("click", () => {
     const userGuess = Number(document.getElementById("guess-input").value);
     const message = document.getElementById("message");
     guessCount++;
-    if (userGuess === randomNumber) {
-        document.getElementById("image").style.display='block'
-        message.textContent = `Congratulations! You guessed the number in ${guessCount} attempts.`;
-        message.style.color = "green";
-        endGame();
-    } else if (userGuess < randomNumber) {
-        message.textContent = "Too low! Try again.";
-        message.style.color = "red";
-    } else if (userGuess > randomNumber) {
-        message.textContent = "Too high! Try again.";
-        message.style.color = "red";
-    }
+
 });
 
 function endGame() {
